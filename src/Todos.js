@@ -7,6 +7,7 @@ class Todos extends Component {
   render() {
     return (
       <div>
+        <input placeholder="fill in text" />
         {this.state.todos.map((todo, index) => {
           return <div key={index}>{todo.text}</div>;
         })}
